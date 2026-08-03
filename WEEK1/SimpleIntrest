@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args) 
+{
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Principal Amount: ");
+        float principal = sc.nextFloat();
+
+        System.out.print("Enter Rate: ");
+        float rate = sc.nextFloat();
+
+        System.out.print("Enter Time: ");
+        float time = sc.nextFloat();
+
+        float simpleInterest = (principal * rate * time) / 100;
+        float amount = principal + simpleInterest;
+
+        System.out.println("Simple Interest = " + simpleInterest);
+        System.out.println("Total Amount = " + amount);
+
+        sc.close();
+    }
+}
