@@ -5,6 +5,7 @@ public class StudentRecord
     private int mark;
     public StudentRecord(String a,String b,int d)
     {
+        
         name = a;
         studentId = b;
         if(d<100 && d>0)
